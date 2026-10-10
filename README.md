@@ -29,7 +29,7 @@ Her alıştırma ayrı bir dosyadadır ve tek başına derlenip çalıştırıla
 |:--:|-----------|---------|
 | 01 | [Kişisel Sistem Bilgisi Kartı](ekstra_01_kisisel_bilgi_karti.cpp) | `string`, veri tipi seçimi |
 | 02 | [Ders Notu Hesaplayıcı](ekstra_02_not_hesaplayici.cpp) | `bool`, ağırlıklı ortalama, `boolalpha` |
-| 03 | [Uçuş Yakıtı ve Menzil Hesaplayıcısı ✈️](ekstra_03_ucus_yakit_menzil.cpp) | `const`, yüzde hesabı |
+| 03 | [Uçuş Yakıtı ve Menzil Hesaplayıcısı](ekstra_03_ucus_yakit_menzil.cpp) | `const`, yüzde hesabı |
 | 04 | [Küçük Bir Finansal Karar Motoru](ekstra_04_finansal_karar_motoru.cpp) | `&&`, üçlü operatör, `if` / `else if` |
 
 ---
