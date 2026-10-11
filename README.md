@@ -6,35 +6,47 @@
 
 Okulda aldığım derslerden ve internetten takip ettiğim kaynaklardan öğrendiklerimi **pekiştirmek** için çözdüğüm alıştırmaların toplandığı kişisel alıştırma sahası.
 
-Her alıştırma ayrı bir dosyadadır ve tek başına derlenip çalıştırılabilir. Dosyaların başında alıştırmanın ne yaptığı, kullanılan formül ve işlenen konular yazılıdır.
+Her alıştırma ayrı bir dosyadadır ve konusuna göre bir bölüm klasöründe yer alır. Her dosya tek başına derlenip çalıştırılabilir. Dosyaların başında alıştırmanın ne yaptığı, kullanılan formül ve işlenen konular yazılıdır.
 
 ---
 
-## 📚 Temel Alıştırmalar
+## 🗺️ Yol Haritası
+
+Alıştırmalar, öğrenilen konulara göre **bölümler** halinde klasörlenir. Her bölüm birkaç haftalık bir öğrenme dönemini kapsar.
+
+| Bölüm | Klasör | Dönem | Konular | Durum |
+|:-----:|--------|:-----:|---------|:-----:|
+| 01 | [Temel Kavramlar](01-temel-kavramlar/) | Hafta 1–3 | Değişkenler, veri tipleri, operatörler, koşullar | ✅ Tamamlandı |
+
+---
+
+## 📂 Bölüm 01 — Temel Kavramlar
+
+### 📚 Temel Alıştırmalar
 
 | #  | Alıştırma | Konular |
 |:--:|-----------|---------|
-| 01 | [Dört İşlem ve Mod Alma](01_dort_islem.cpp) | Aritmetik operatörler, `%` |
-| 02 | [Dikdörtgenin Alanı](02_dikdortgen_alani.cpp) | `int`, `cin` / `cout` |
-| 03 | [Celsius → Fahrenheit](03_celsius_fahrenheit.cpp) | İşlem önceliği, tam sayı bölmesi |
-| 04 | [Dairenin Alanı ve Çevresi](04_daire_alan_cevre.cpp) | `const`, `double` |
-| 05 | [Üç Sınavın Ortalaması](05_sinav_ortalamasi.cpp) | Ondalıklı bölme |
-| 06 | [Karakterin ASCII Kodu](06_ascii_kodu.cpp) | `char`, `static_cast` |
-| 07 | [Geçici Değişkensiz Takas](07_degisken_takasi.cpp) | Toplama-çıkarma ile swap |
-| 08 | [Basamaklara Ayırma](08_basamak_ayirma.cpp) | `/`, `%`, `if` / `else` |
+| 01 | [Dört İşlem ve Mod Alma](01-temel-kavramlar/01_dort_islem.cpp) | Aritmetik operatörler, `%` |
+| 02 | [Dikdörtgenin Alanı](01-temel-kavramlar/02_dikdortgen_alani.cpp) | `int`, `cin` / `cout` |
+| 03 | [Celsius → Fahrenheit](01-temel-kavramlar/03_celsius_fahrenheit.cpp) | İşlem önceliği, tam sayı bölmesi |
+| 04 | [Dairenin Alanı ve Çevresi](01-temel-kavramlar/04_daire_alan_cevre.cpp) | `const`, `double` |
+| 05 | [Üç Sınavın Ortalaması](01-temel-kavramlar/05_sinav_ortalamasi.cpp) | Ondalıklı bölme |
+| 06 | [Karakterin ASCII Kodu](01-temel-kavramlar/06_ascii_kodu.cpp) | `char`, `static_cast` |
+| 07 | [Geçici Değişkensiz Takas](01-temel-kavramlar/07_degisken_takasi.cpp) | Toplama-çıkarma ile swap |
+| 08 | [Basamaklara Ayırma](01-temel-kavramlar/08_basamak_ayirma.cpp) | `/`, `%`, `if` / `else` |
 
-## 🚀 Ekstra Alıştırmalar
+### 🚀 Ekstra Alıştırmalar
 
 | #  | Alıştırma | Konular |
 |:--:|-----------|---------|
-| 01 | [Kişisel Sistem Bilgisi Kartı](ekstra_01_kisisel_bilgi_karti.cpp) | `string`, veri tipi seçimi |
-| 02 | [Ders Notu Hesaplayıcı](ekstra_02_not_hesaplayici.cpp) | `bool`, ağırlıklı ortalama, `boolalpha` |
-| 03 | [Uçuş Yakıtı ve Menzil Hesaplayıcısı](ekstra_03_ucus_yakit_menzil.cpp) | `const`, yüzde hesabı |
-| 04 | [Küçük Bir Finansal Karar Motoru](ekstra_04_finansal_karar_motoru.cpp) | `&&`, üçlü operatör, `if` / `else if` |
+| 01 | [Kişisel Sistem Bilgisi Kartı](01-temel-kavramlar/ekstra_01_kisisel_bilgi_karti.cpp) | `string`, veri tipi seçimi |
+| 02 | [Ders Notu Hesaplayıcı](01-temel-kavramlar/ekstra_02_not_hesaplayici.cpp) | `bool`, ağırlıklı ortalama, `boolalpha` |
+| 03 | [Uçuş Yakıtı ve Menzil Hesaplayıcısı](01-temel-kavramlar/ekstra_03_ucus_yakit_menzil.cpp) | `const`, yüzde hesabı |
+| 04 | [Küçük Bir Finansal Karar Motoru](01-temel-kavramlar/ekstra_04_finansal_karar_motoru.cpp) | `&&`, üçlü operatör, `if` / `else if` |
 
-## 🏁 Bitirme Projesi
+### 🏁 Bitirme Projesi
 
-### [Uçuş Öncesi Kontrol ve Kalkış Kararı Sistemi](bitirme_ucus_oncesi_kontrol.cpp)
+#### [Uçuş Öncesi Kontrol ve Kalkış Kararı Sistemi](01-temel-kavramlar/bitirme_ucus_oncesi_kontrol.cpp)
 
 Şimdiye kadar öğrenilen tüm konuları tek programda birleştiren proje. Kullanıcıdan uçuş bilgilerini alır; ağırlık, yakıt, hava, pilot dinlenmesi ve kontrol listesini denetler, hizalı bir rapor yazdırır ve tek bir karar verir:
 
@@ -96,7 +108,7 @@ Kontrol Listesi:                Uygun
 
 ---
 
-## 🧠 İşlenen Konular
+## 🧠 Şimdiye Kadar İşlenen Konular
 
 - Değişkenler ve veri tipleri: `int`, `double`, `char`, `string`, `bool`
 - `cin` ve `cout` ile kullanıcıdan veri alma ve ekrana yazdırma
@@ -116,7 +128,7 @@ Bilgisayarında bir C++ derleyicisi (ör. `g++`) kurulu olmalıdır.
 
 ```bash
 # Derle
-g++ 01_dort_islem.cpp -o program
+g++ 01-temel-kavramlar/01_dort_islem.cpp -o program
 
 # Çalıştır (Windows)
 program.exe
