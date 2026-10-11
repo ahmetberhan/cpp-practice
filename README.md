@@ -32,6 +32,68 @@ Her alıştırma ayrı bir dosyadadır ve tek başına derlenip çalıştırıla
 | 03 | [Uçuş Yakıtı ve Menzil Hesaplayıcısı](ekstra_03_ucus_yakit_menzil.cpp) | `const`, yüzde hesabı |
 | 04 | [Küçük Bir Finansal Karar Motoru](ekstra_04_finansal_karar_motoru.cpp) | `&&`, üçlü operatör, `if` / `else if` |
 
+## 🏁 Bitirme Projesi
+
+### [Uçuş Öncesi Kontrol ve Kalkış Kararı Sistemi](bitirme_ucus_oncesi_kontrol.cpp)
+
+Şimdiye kadar öğrenilen tüm konuları tek programda birleştiren proje. Kullanıcıdan uçuş bilgilerini alır; ağırlık, yakıt, hava, pilot dinlenmesi ve kontrol listesini denetler, hizalı bir rapor yazdırır ve tek bir karar verir:
+
+| Karar | Ne zaman? |
+|-------|-----------|
+| ✅ **GO** | Tüm kontroller uygun |
+| ⏸️ **ERTELE** | Yalnızca tek bir giderilebilir sorun var (hava, ağırlık, yakıt veya pilot dinlenmesi) |
+| ❌ **NO-GO** | Birden fazla sorun var veya kontrol listesi tamamlanmamış |
+
+**Konular:** `const`, `int` / `double` / `char` / `string` / `bool`, `static_cast`, `/` ve `%` ile saat-dakika dönüşümü, yüzde hesabı, `&&` `||` `!`, üçlü operatör, `if` / `else if` / `else`, `\t` ile hizalı çıktı
+
+<details>
+<summary>Örnek çıktı</summary>
+
+```
+============================================
+     UCUS ONCESI KONTROL RAPORU
+============================================
+Pilot:                          Ahmet
+Ucus Kodu:                      TK1923
+
+--- AGIRLIK ---
+Bos Ucak Agirligi:              42000 kg
+Yolcu Agirligi:                 14250 kg
+Kargo Agirligi:                 3000 kg
+Yakit Agirligi:                 16000 kg
+Toplam Agirlik:                 75250 kg / 79000 kg
+Doluluk Yuzdesi:                %95.2532
+Durum:                          Uygun
+
+--- YAKIT VE SURE ---
+Ucus Suresi:                    2 saat 30 dakika
+Gereken Yakit:                  7500 L
+Emniyet Payi Ile Gereken Yakit: 8250 L
+Depodaki Yakit:                 20000 L
+Varista Kalacak Yakit:          12500 L
+Durum:                          Uygun
+
+(Bilgi) Depodaki toplam yakit ile azami ucus suresi: 6 saat 40 dakika, azami menzil: 5333.33 km
+
+--- HAVA ---
+Ruzgar Hizi:                    18 knot (sinir 30)
+Gorus Menzili:                  10 km (min 5)
+Durum:                          Uygun
+
+--- PILOT VE KONTROL LISTESI ---
+Dinlenme Suresi:                12 saat 0 dakika
+Pilot Durum:                    Uygun
+Kontrol Listesi:                Uygun
+
+============================================
+>>> KARAR: GO - Ucus kalkisa uygundur.
+============================================
+```
+
+</details>
+
+> Not: Bu bir programlama alıştırmasıdır; gerçek uçuş planlamasında kullanılmaz.
+
 ---
 
 ## 🧠 İşlenen Konular
@@ -42,7 +104,7 @@ Her alıştırma ayrı bir dosyadadır ve tek başına derlenip çalıştırıla
 - Tam sayı bölmesi ve ondalıklı bölme arasındaki fark
 - `const` ile sabit tanımlama
 - `static_cast` ile tür dönüşümü
-- Karşılaştırma ve mantıksal operatörler: `>=` `<=` `&&`
+- Karşılaştırma ve mantıksal operatörler: `>=` `<=` `&&` `||` `!`
 - Üçlü operatör `koşul ? a : b`
 - `if` / `else if` / `else` yapıları
 
