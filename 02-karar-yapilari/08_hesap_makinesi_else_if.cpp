@@ -35,6 +35,10 @@ int main()
 	{
 		cout << a / b << endl;
 	}
+	else if (islem == '/' && b == 0)     // Operatör doğru ama bölen sıfır
+	{
+		cout << "Sifira bolme yapilamaz. " << endl;
+	}
 	else                                 // switch'teki default'un karşılığı
 	{
 		cout << "Hatali operator girdiniz. " << endl;

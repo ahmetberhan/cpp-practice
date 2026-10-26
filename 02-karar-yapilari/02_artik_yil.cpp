@@ -22,7 +22,7 @@ int main()
 	//   VEYA  4'e bölünüp 100'e bölünmüyorsa               (ör. 2024 -> artık)
 	// 1900 gibi 100'e bölünüp 400'e bölünmeyen yıllar iki şartı da sağlamaz.
 	if ((yil % 400 == 0) || (yil % 4 == 0 && yil % 100 != 0)) {
-		cout << yil << " bir artik1 yildir. (Subat 29 gun ceker. )" << endl;
+		cout << yil << " bir artik yildir. (Subat 29 gun ceker. )" << endl;
 	}
 	else {
 		cout << yil << " bir artik yil degildir. (Subat 28 gun ceker. )" << endl;
