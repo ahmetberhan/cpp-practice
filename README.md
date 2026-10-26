@@ -12,11 +12,23 @@ Her alıştırma ayrı bir dosyadadır ve konusuna göre bir bölüm klasöründ
 
 ## 🗺️ Yol Haritası
 
-Alıştırmalar, öğrenilen konulara göre **bölümler** halinde klasörlenir. Her bölüm birkaç haftalık bir öğrenme dönemini kapsar.
+Alıştırmalar, Programlamaya Giriş dersinin 14 haftalık planına göre **bölümler** halinde klasörlenir. Her bölüm o haftalarda işlenen konuyu kapsar.
 
-| Bölüm | Klasör | Dönem | Konular | Durum |
-|:-----:|--------|:-----:|---------|:-----:|
-| 01 | [Temel Kavramlar](01-temel-kavramlar/) | Hafta 1–3 | Değişkenler, veri tipleri, operatörler, koşullar | ✅ Tamamlandı |
+| Bölüm | Konu | Hafta | Durum |
+|:-----:|------|:-----:|:-----:|
+| 01 | [Temel Kavramlar](01-temel-kavramlar/) — Giriş, veri tipleri ve operatörler | 1–2 | ✅ |
+| 02 | [Karar Yapıları](02-karar-yapilari/) — if / else, switch | 3 | ✅ |
+| 03 | [Döngüler](03-donguler/) — for, while | 4 | ✅ |
+| 04 | Diziler | 5 | ⏳ |
+| 05 | String, Struct ve Enum | 6 | ⏳ |
+| 06 | Fonksiyonlar | 7 | ⏳ |
+| — | *Ara Sınav* | 8 | |
+| 07 | İşaretçiler ve Dinamik Bellek | 9 | ⏳ |
+| 08 | Dosya İşlemleri ve Hatalar | 10 | ⏳ |
+| 09 | Sınıflar ve Nesneler | 11 | ⏳ |
+| 10 | Şablonlar ve STL | 12 | ⏳ |
+| 11 | Modern C++ ve İyi Pratikler | 13 | ⏳ |
+| — | *Proje Sunumları* | 14 | |
 
 ---
 
@@ -108,6 +120,36 @@ Kontrol Listesi:                Uygun
 
 ---
 
+## 📂 Bölüm 02 — Karar Yapıları
+
+| #  | Alıştırma | Konular |
+|:--:|-----------|---------|
+| 01 | [Pozitif, Negatif veya Sıfır](02-karar-yapilari/01_pozitif_negatif_sifir.cpp) | `if` / `else if` / `else` |
+| 02 | [Artık Yıl Kontrolü](02-karar-yapilari/02_artik_yil.cpp) | `%`, birleşik koşullar `&&` `\|\|` |
+| 03 | [Üç Sayının En Büyüğü ve En Küçüğü](02-karar-yapilari/03_en_buyuk_en_kucuk.cpp) | Bağımsız `if` blokları |
+| 04 | [Sesli mi, Sessiz mi?](02-karar-yapilari/04_sesli_sessiz_harf.cpp) | `switch`, `case`, `default`, `break` |
+| 05 | [Vücut Kitle İndeksi](02-karar-yapilari/05_vucut_kitle_indeksi.cpp) | Aralık kontrolü |
+| 06 | [3'e ve 5'e Bölünebilirlik](02-karar-yapilari/06_bolunebilirlik_3_ve_5.cpp) | `%`, `==` / `!=`, durum ayırma |
+| 07 | [İkinci Dereceden Denklem (a = 0 kontrolü)](02-karar-yapilari/07_ikinci_derece_denklem.cpp) | İç içe `if`, `sqrt`, diskriminant |
+| 08 | [Hesap Makinesi (else if ile)](02-karar-yapilari/08_hesap_makinesi_else_if.cpp) | `switch` → `else if` dönüşümü |
+
+---
+
+## 📂 Bölüm 03 — Döngüler
+
+| #  | Alıştırma | Konular |
+|:--:|-----------|---------|
+| 01 | [1'den N'e Toplam ve Ortalama](03-donguler/01_toplam_ve_ortalama.cpp) | `for`, toplayıcı değişken |
+| 02 | [Basamakların Toplamı](03-donguler/02_basamak_toplami.cpp) | `while`, `% 10` ve `/ 10` |
+| 03 | [Sayının Tersi](03-donguler/03_sayinin_tersi.cpp) | `while`, sayıyı basamak basamak kurma |
+| 04 | [3'e Bölünenlerin Toplamı](03-donguler/04_uce_bolunenlerin_toplami.cpp) | Döngü içinde `if` |
+| 05 | [0 Girilene Kadar En Büyük Sayı](03-donguler/05_en_buyuk_sayi_sifira_kadar.cpp) | `while`, bitiş değeri (sentinel) |
+| 06 | [Mükemmel Sayı](03-donguler/06_mukemmel_sayi.cpp) | Bölen bulma |
+| 07 | [Üs Alma (pow olmadan)](03-donguler/07_us_alma.cpp) | `*=`, `long long` |
+| 08 | [1–100 Arası Asal Sayılar](03-donguler/08_asal_sayilar.cpp) | İç içe `for`, `bool` bayrak, `break` |
+
+---
+
 ## 🧠 Şimdiye Kadar İşlenen Konular
 
 - Değişkenler ve veri tipleri: `int`, `double`, `char`, `string`, `bool`
@@ -118,7 +160,11 @@ Kontrol Listesi:                Uygun
 - `static_cast` ile tür dönüşümü
 - Karşılaştırma ve mantıksal operatörler: `>=` `<=` `&&` `||` `!`
 - Üçlü operatör `koşul ? a : b`
-- `if` / `else if` / `else` yapıları
+- `if` / `else if` / `else` yapıları, iç içe koşullar
+- `switch` / `case` / `default` / `break`
+- `for` ve `while` döngüleri, iç içe döngüler
+- Toplayıcı ve bayrak (`bool`) değişkenler, bitiş değeriyle döngü sonlandırma
+- `<cmath>` ve `sqrt`, `long long`
 
 ---
 
