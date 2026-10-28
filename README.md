@@ -148,6 +148,43 @@ Kontrol Listesi:                Uygun
 | 07 | [Üs Alma (pow olmadan)](03-donguler/07_us_alma.cpp) | `*=`, `long long` |
 | 08 | [1–100 Arası Asal Sayılar](03-donguler/08_asal_sayilar.cpp) | İç içe `for`, `bool` bayrak, `break` |
 
+### 🏁 Bitirme Projesi (Bölüm 02–03)
+
+#### [Mini Havayolu Bilet Terminali](03-donguler/bitirme_havayolu_terminali.cpp)
+
+Karar yapıları ve döngüleri tek programda birleştiren proje. Bir havalimanı bankosunu taklit eder: kullanıcı **Çıkış** diyene kadar açık kalan bir menüden bilet satılır, bagaj tartılır, bilet numarası doğrulanır ve gün sonunda tüm işlemler raporlanır.
+
+| Menü | İşlev | Öne çıkan konular |
+|:----:|-------|-------------------|
+| 1 | **Bilet sat** — yaşa göre indirim, sınıfa göre fiyat, kontrol haneli bilet numarası | `do-while` ile giriş doğrulama, iç içe `switch`, `else if`, `% 10` |
+| 2 | **Bagaj kontrolü** — hatalı bagajı atla, 3 bagaj sınırı, fazla kg ücreti | `continue`, `break`, `?:` |
+| 3 | **Bilet numarası doğrula** — kontrol hanesi ile | `while`, basamak toplamı |
+| 4 | **Gün sonu raporu** — gelirler, doluluk, koltuk haritası | Sayaç / toplayıcı, `static_cast`, iç içe `for` |
+
+<details>
+<summary>Örnek gün sonu raporu</summary>
+
+```
+========== GUN SONU RAPORU ==========
+Satilan bilet:          3 / 10
+Ekonomi / Business:     2 / 1
+Indirimli yolcu:        2
+Doluluk orani:          %30
+Bilet geliri:           4550 TL
+Bagaj geliri:           350 TL
+Toplam gelir:           4900 TL
+Ortalama bilet fiyati:  1516.67 TL
+En yuksek bilet:        2000 TL
+
+Koltuk Haritasi:
+  [X][X][X][ ][ ]
+  [ ][ ][ ][ ][ ]
+```
+
+</details>
+
+> Not: Bu bir programlama alıştırmasıdır; gerçek bilet satışında kullanılmaz.
+
 ---
 
 ## 🧠 Şimdiye Kadar İşlenen Konular
@@ -162,7 +199,8 @@ Kontrol Listesi:                Uygun
 - Üçlü operatör `koşul ? a : b`
 - `if` / `else if` / `else` yapıları, iç içe koşullar
 - `switch` / `case` / `default` / `break`
-- `for` ve `while` döngüleri, iç içe döngüler
+- `for`, `while` ve `do-while` döngüleri, iç içe döngüler
+- `break` ve `continue`, menü döngüsü ve giriş doğrulama
 - Toplayıcı ve bayrak (`bool`) değişkenler, bitiş değeriyle döngü sonlandırma
 - `<cmath>` ve `sqrt`, `long long`
 
